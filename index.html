@@ -1,35 +1,161 @@
 <!DOCTYPE html>
 <html>
+
 <head>
 	<title>Pagina principal - Lead Test</title>
 	<meta charset="utf-8">
 	<link rel="shortcut icon" href="imagens/favicon (3).ico" />
-	<link rel="stylesheet" href="css/bootstrap.css"
-</head>
-<body>
-	
-			<div align="center">
-				<img src="imagens/LEADT.png" width="200" height="200">
-			</div>	
+	<link rel="stylesheet" href="css/bootstrap.css">
+	<link rel="stylesheet" href="css/style.css">
 
-			
-			<form>
-				<blockquote>
-		<blockquote>
-				<table border="2" bgcolor="#FFFAFA" align="right">
-			<tr>
-				<th colspan="4">Seja bem-vindo, abcde@hotmail.com</th>
-			</tr>
-			<tr>
-				<td colspan="2">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input class="btn-primary" type="button" value="minha conta"></td>
-				<td colspan="2">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="button" value="sair"></td>
-			</tr>
-		</table>
-			</blockquote>
-	</blockquote>
-	</form>
-	
+	<style>
+		.produtos {
+			color: black;
+			font-family: "Arial Verdana";
+			font-size: 1em;
+			margin: 5px;
+		}
+
+		.product {
+			text-decoration: none;
+			display: inline;
+		}
+
+		.produtos:hover {
+			background-color: #f8f9fa;
+			transition: 0.5;
+		}
+
+		.prod-text {
+			margin: 2px;
+		}
+
+		#prod-box {
+			border: 1px solid black;
+		}
+	</style>
+</head>
+
+<body>
+	<nav class="navbar navbar-expand-lg navbar-light bg-light col-12">
+		<a class="navbar-brand" href="#">
+			<img src="imagens/LEADT.png" height="100px" width="120px">
+		</a>
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+		    aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+		<div class="col-2">
+			<em>
+				<strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Prove e
+					<span style="color:#FF0000">aprove!</span>
+				</strong>
+			</em>
+		</div>
+		<div class="collapse navbar-collapse" id="navbarNav">
+			<ul class="navbar-nav">
+				<li class="nav-item">
+					<a class="nav-link" href="#">Categorias
+						<span class="sr-only">(current)</span>
+					</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#">Feedback</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#">Fale conosco</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#">Envie seu produto</a>
+				</li>
+			</ul>
+		</div>
+		<div class="col-2">
+			<p>Olá, seja bem-vindo:
+				<br> abcde@hotmail.com</p>
+			<br>
+
+			<a href="#">Minha conta</a>
+			<br>
+		</div>
+		<div class="col-2">
+			<a href="#">Sair</a>
+		</div>
+	</nav>
+	<div class="w-100" style="background-color: grey; height: 1px;"></div>
+	<div class="row" style="background-color: #f8f9fa">
+		<div class="col-md-7 offset-md-3 ">
+			<ul>
+				<a class="produtos" href="#>">
+					<li class="product">Alimentos </li>
+				</a>|
+				<a class="produtos" href="#>">
+					<li class="product">Eletrônicos </li>
+				</a>|
+				<a class="produtos" href="#>">
+					<li class="product">Cosméticos </li>
+				</a>|
+				<a class="produtos" href="#>">
+					<li class="product">Imóveis </li>
+				</a>|
+				<a class="produtos" href="#>">
+					<li class="product">Utensílios domésticos</li>
+				</a>
+			</ul>
+		</div>
+	</div>
+	<div class="container">
+		<div class="row">
+			<div id="prod-box" class="col-md-3">
+				<a href="#">
+					<img src="imagens/sucos.jpeg">
+				</a>
+				<div>
+					<p class='prod-text1'>Sucos de frutas trangênicos!</p>
+					<p class='prod-text'>Empresa 1</p>
+					<p class='prod-text'>X pessoas já testaram</p>
+					<a class='prod-text' href="#">Clique aqui para testar</a>
+				</div>
+			</div>
+			<div id="prod-box" class="col-md-3">
+				<a href="#">
+					<img src="imagens/sucos.jpeg">
+				</a>
+				<div>
+					<p class='prod-text1'>Sucos de frutas mutantes!</p>
+					<p class='prod-text'>Empresa 2</p>
+					<p class='prod-text'>X pessoas já testaram</p>
+					<a class='prod-text' href="#">Clique aqui para testar</a>
+				</div>
+			</div>
+			<div id="prod-box" class="col-md-3">
+				<a href="#">
+					<img src="imagens/notebook.jpg" style="height: 225px; width: 225px;">
+				</a>
+				<div>
+					<p class='prod-text1'>Notebook super potente!</p>
+					<p class='prod-text'>Empresa 3</p>
+					<p class='prod-text'>X pessoas já testaram</p>
+					<a class='prod-text' href="#">Clique aqui para testar</a>
+				</div>
+			</div>
+			<div id="prod-box" class="col-md-3">
+				<a href="#">
+					<img src="imagens/batom.jpeg" style="height: 225px; width: 225px;">
+				</a>
+				<div>
+					<p class='prod-text1'>Batom super sensual!</p>
+					<p class='prod-text'>Empresa 4</p>
+					<p class='prod-text'>X pessoas já testaram</p>
+					<a class='prod-text' href="#">Clique aqui para testar</a>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
 
 
 </body>
+
 </html>
