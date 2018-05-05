@@ -9,11 +9,29 @@
 	<link rel="stylesheet" href="css/style.css">
 
 	<style>
-		.produtos {
+		a.produtos {
 			color: black;
+			text-decoration: none;
 			font-family: "Arial Verdana";
 			font-size: 1em;
-			margin: 5px;
+			margin-top: 55px !important;
+			padding: 4px;
+			padding-bottom: 19px;
+		}
+
+		a.conta {
+			color: black;
+			text-decoration: none;
+			font-family: "Arial Verdana";
+			font-size: 1em;
+			padding: 6px;
+			margin-left: -5px;
+		}
+
+		.conta:hover {
+			background-color: rgb(255, 188, 73);
+			color: #49A2FF;
+			transition: 1s;
 		}
 
 		.product {
@@ -22,8 +40,9 @@
 		}
 
 		.produtos:hover {
-			background-color: black;
-			transition: 0.5;
+			background-color: rgb(255, 188, 73);
+			color: #49A2FF;
+			transition: 1s;
 		}
 
 		.prod-text {
@@ -32,21 +51,26 @@
 
 		#prod-box {
 			border: 1px solid black;
-			margin-right: 4px;
+			margin-right: 8px;
+			margin-top: 10px;
 		}
 
 		#prod-box:hover {
-			background: rgb(255, 188, 73);
+			background: #E8B937;
 			transition: 0.5s;
 
+		}
+
+		#final {
+			box-shadow: powderblue;
 		}
 	</style>
 </head>
 
-<body>
-	<nav class="navbar navbar-expand-lg navbar-light bg-light col-12">
+<body style="background-color:#FFBD4A;">
+	<nav class="navbar navbar-expand-lg navbar-light  col-12" style="background-color: #f8f9fa">
 		<a class="navbar-brand" href="#">
-			<img src="imagens/LEADT.png" height="100px" width="120px">
+			<img src="imagens/LEAD.png">
 		</a>
 		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
 		    aria-label="Toggle navigation">
@@ -82,30 +106,30 @@
 				<br> abcde@hotmail.com</p>
 			<br>
 
-			<a href="#">Minha conta</a>
+			<a class="conta" href="#">Minha conta</a>
 			<br>
 		</div>
 		<div class="col-2">
-			<a href="#">Sair</a>
+			<a class="conta" href="#">Sair</a>
 		</div>
 	</nav>
-	<div class="w-100" style="background-color: grey; height: 1px;"></div>
-	<div class="row" style="background-color: #f8f9fa">
-		<div class="col-md-7 offset-md-3 ">
+	<div class="w-100" style="background-color: rgb(0,182,182); height: 1px;"></div>
+	<div id="final" class="row" style="background-color: #f8f9fa">
+		<div class="col-md-6 offset-md-3 ">
 			<ul>
-				<a class="produtos" href="#>">
+				<a class="produtos" href="#">
 					<li class="product">Alimentos </li>
 				</a>|
-				<a class="produtos" href="#>">
+				<a class="produtos" href="#">
 					<li class="product">Eletrônicos </li>
 				</a>|
-				<a class="produtos" href="#>">
+				<a class="produtos" href="#">
 					<li class="product">Cosméticos </li>
 				</a>|
-				<a class="produtos" href="#>">
+				<a class="produtos" href="#">
 					<li class="product">Imóveis </li>
 				</a>|
-				<a class="produtos" href="#>">
+				<a class="produtos" href="#">
 					<li class="product">Utensílios domésticos</li>
 				</a>
 			</ul>
@@ -126,10 +150,102 @@
 			</div>
 			<div id="prod-box" class="col-auto">
 				<a href="#">
-					<img src="imagens/sucos.jpeg">
+					<img src="imagens/geladeira.png" style="height: 225px; width: 225px;">
 				</a>
 				<div>
-					<p class='prod-text1'>Sucos de frutas mutantes!</p>
+					<p class='prod-text1'>A geladeira mais moderna do mercado!</p>
+					<p class='prod-text'>Empresa 2</p>
+					<p class='prod-text'>X pessoas já testaram</p>
+					<a class='prod-text' href="#">Clique aqui para testar</a>
+				</div>
+			</div>
+			<div id="prod-box" class="col-auto">
+				<a href="#">
+					<img src="imagens/notebook.png" style="height: 225px; width: 225px;">
+				</a>
+				<div>
+					<p class='prod-text1'>Notebook super potente!</p>
+					<p class='prod-text'>Empresa 3</p>
+					<p class='prod-text'>X pessoas já testaram</p>
+					<a class='prod-text' href="#">Clique aqui para testar</a>
+				</div>
+			</div>
+			<div id="prod-box" class="col-auto">
+				<a href="#">
+					<img src="imagens/batom.png" style="height: 225px; width: 225px;">
+				</a>
+				<div>
+					<p class='prod-text1'>Batom super sensual!</p>
+					<p class='prod-text'>Empresa 4</p>
+					<p class='prod-text'>X pessoas já testaram</p>
+					<a class='prod-text' href="#">Clique aqui para testar</a>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div id="prod-box" class="col-auto">
+				<a href="#">
+					<img src="imagens/sucos.png" style="height: 225px; width: 225px;">
+				</a>
+				<div>
+					<p class='prod-text1'>Sucos de frutas trangênicos!</p>
+					<p class='prod-text'>Empresa 1</p>
+					<p class='prod-text'>X pessoas já testaram</p>
+					<a class='prod-text' href="#">Clique aqui para testar</a>
+				</div>
+			</div>
+			<div id="prod-box" class="col-auto">
+				<a href="#">
+					<img src="imagens/geladeira.png" style="height: 225px; width: 225px;">
+				</a>
+				<div>
+					<p class='prod-text1'>A geladeira mais moderna do mercado!</p>
+					<p class='prod-text'>Empresa 2</p>
+					<p class='prod-text'>X pessoas já testaram</p>
+					<a class='prod-text' href="#">Clique aqui para testar</a>
+				</div>
+			</div>
+			<div id="prod-box" class="col-auto">
+				<a href="#">
+					<img src="imagens/notebook.png" style="height: 225px; width: 225px;">
+				</a>
+				<div>
+					<p class='prod-text1'>Notebook super potente!</p>
+					<p class='prod-text'>Empresa 3</p>
+					<p class='prod-text'>X pessoas já testaram</p>
+					<a class='prod-text' href="#">Clique aqui para testar</a>
+				</div>
+			</div>
+			<div id="prod-box" class="col-auto">
+				<a href="#">
+					<img src="imagens/batom.png" style="height: 225px; width: 225px;">
+				</a>
+				<div>
+					<p class='prod-text1'>Batom super sensual!</p>
+					<p class='prod-text'>Empresa 4</p>
+					<p class='prod-text'>X pessoas já testaram</p>
+					<a class='prod-text' href="#">Clique aqui para testar</a>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div id="prod-box" class="col-auto">
+				<a href="#">
+					<img src="imagens/sucos.png" style="height: 225px; width: 225px;">
+				</a>
+				<div>
+					<p class='prod-text1'>Sucos de frutas trangênicos!</p>
+					<p class='prod-text'>Empresa 1</p>
+					<p class='prod-text'>X pessoas já testaram</p>
+					<a class='prod-text' href="#">Clique aqui para testar</a>
+				</div>
+			</div>
+			<div id="prod-box" class="col-auto">
+				<a href="#">
+					<img src="imagens/geladeira.png" style="height: 225px; width: 225px;">
+				</a>
+				<div>
+					<p class='prod-text1'>A geladeira mais moderna do mercado!</p>
 					<p class='prod-text'>Empresa 2</p>
 					<p class='prod-text'>X pessoas já testaram</p>
 					<a class='prod-text' href="#">Clique aqui para testar</a>
